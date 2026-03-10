@@ -87,7 +87,7 @@ const UseCases = () => {
                       <AlertCircle size={24} />
                     </div>
                     <div>
-                      <h4 className="font-bold text-primary mb-1 uppercase text-sm tracking-wider">The Pain Point</h4>
+                      <h4 className="font-bold text-primary mb-1 uppercase text-sm tracking-wider">{t("useCases.labels.pain")}</h4>
                       <p className="text-gray-600 text-lg">
                         {t(`useCases.sectors.${activeSector}.pain`)}
                       </p>
@@ -99,7 +99,7 @@ const UseCases = () => {
                       <Lightbulb size={24} />
                     </div>
                     <div>
-                      <h4 className="font-bold text-primary mb-1 uppercase text-sm tracking-wider">Our Solution</h4>
+                      <h4 className="font-bold text-primary mb-1 uppercase text-sm tracking-wider">{t("useCases.labels.solution")}</h4>
                       <p className="text-gray-600 text-lg">
                         {t(`useCases.sectors.${activeSector}.solution`)}
                       </p>
@@ -110,7 +110,7 @@ const UseCases = () => {
                 <div className="bg-primary/5 rounded-2xl p-6 lg:p-8">
                   <h4 className="font-bold text-primary mb-6 uppercase text-sm tracking-wider flex items-center">
                     <span className="w-2 h-2 bg-accent rounded-full mr-2" />
-                    MCP Integrations
+                    {t("useCases.labels.mcp")}
                   </h4>
                   <div className="flex flex-wrap gap-3">
                     {/* Hardcoding from translation keys structure since it's an array */}

@@ -5,7 +5,8 @@
     "features": "Features",
     "pricing": "Pricing",
     "faq": "FAQ",
-    "requestDemo": "Request Demo"
+    "requestDemo": "Request Demo",
+    "language": "Language"
   },
   "hero": {
     "headline": "Your AI agent answers every call. Instantly. Connected to your business.",
@@ -18,6 +19,21 @@
       "availability": "24/7 availability",
       "concurrent": "∞ concurrent calls",
       "mcp": "100% MCP-compatible"
+    },
+    "sectors": [
+      "HEALTHCARE",
+      "LEGAL",
+      "REAL ESTATE",
+      "HOSPITALITY",
+      "E-COMMERCE"
+    ],
+    "mockup": {
+      "incoming": "Incoming Call...",
+      "active": "AI Agent Active",
+      "processing": "Processing intent...",
+      "appointment": "📅 Appointment booked",
+      "record": "🗃️ Record found",
+      "resolved": "✅ Issue resolved"
     }
   },
   "howItWorks": {
@@ -43,38 +59,61 @@
         "name": "Healthcare",
         "pain": "Patients wait on hold to book appointments",
         "solution": "AI books slots in real-time, checks insurance, sends reminders",
-        "mcp": ["Google Calendar MCP", "EHR Database MCP"]
+        "mcp": [
+          "Google Calendar MCP",
+          "EHR Database MCP"
+        ]
       },
       "realEstate": {
         "name": "Real Estate",
         "pain": "Prospects call after hours, agents miss leads",
         "solution": "AI qualifies leads, schedules property viewings, sends info",
-        "mcp": ["CRM MCP", "Calendar MCP"]
+        "mcp": [
+          "CRM MCP",
+          "Calendar MCP"
+        ]
       },
       "legal": {
         "name": "Legal / Law Firms",
         "pain": "Intake calls take 20 min of paralegal time",
         "solution": "AI collects case details, checks conflicts, books consultations",
-        "mcp": ["Case Management MCP", "Calendar MCP"]
+        "mcp": [
+          "Case Management MCP",
+          "Calendar MCP"
+        ]
       },
       "ecommerce": {
         "name": "E-commerce",
         "pain": "WISMO calls flood support lines",
         "solution": "AI checks order status, initiates returns, updates addresses",
-        "mcp": ["Orders DB MCP", "Shipping MCP"]
+        "mcp": [
+          "Orders DB MCP",
+          "Shipping MCP"
+        ]
       },
       "hospitality": {
         "name": "Hospitality",
         "pain": "Front desk overwhelmed with reservation requests",
         "solution": "AI books rooms, answers amenity questions, handles check-in info",
-        "mcp": ["Property Management MCP", "Calendar MCP"]
+        "mcp": [
+          "Property Management MCP",
+          "Calendar MCP"
+        ]
       },
       "automotive": {
         "name": "Automotive / Workshops",
         "pain": "Service bookings require calling back",
         "solution": "AI books oil changes, checks parts availability, confirms slots",
-        "mcp": ["Workshop DB MCP", "Calendar MCP"]
+        "mcp": [
+          "Workshop DB MCP",
+          "Calendar MCP"
+        ]
       }
+    },
+    "labels": {
+      "pain": "The pain point",
+      "solution": "Our solution",
+      "mcp": "MCP integrations"
     }
   },
   "features": {
@@ -156,7 +195,8 @@
         "price": "Custom",
         "cta": "Contact Sales"
       }
-    }
+    },
+    "popular": "Most popular"
   },
   "faq": {
     "title": "Common questions",
@@ -205,6 +245,12 @@
       "docs": "Docs",
       "privacy": "Privacy",
       "terms": "Terms"
+    },
+    "columns": {
+      "platform": "Platform",
+      "resources": "Resources",
+      "legal": "Legal",
+      "support": "Support"
     }
   }
 }
