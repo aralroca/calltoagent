@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F172A;
+  --color-accent: #6366F1;
+  --color-secondary-accent: #22D3EE;
+  --color-success: #10B981;
+  --color-background: #FFFFFF;
+  --color-background-alt: #F8FAFC;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent;
+}
+
+.dark-hero-gradient {
+  background: radial-gradient(circle at top center, #1E293B 0%, #0F172A 100%);
+}

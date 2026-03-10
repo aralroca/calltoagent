@@ -1,0 +1,210 @@
+{
+  "navbar": {
+    "howItWorks": "Cómo funciona",
+    "useCases": "Casos de uso",
+    "features": "Características",
+    "pricing": "Precios",
+    "faq": "Preguntas frecuentes",
+    "requestDemo": "Solicitar Demo"
+  },
+  "hero": {
+    "headline": "Tu agente de IA responde cada llamada. Al instante. Conectado a tu negocio.",
+    "subheadline": "Reemplaza tu línea telefónica de atención al cliente con un agente de voz con IA que reserva citas, consulta tu base de datos y resuelve problemas — 24/7, sin intervención humana.",
+    "primaryCTA": "Probar Demo en vivo",
+    "secondaryCTA": "Ver cómo funciona",
+    "socialProof": "Confiado por empresas en salud, legal, inmobiliaria, hostelería y comercio electrónico",
+    "stats": {
+      "latency": "< 300ms de latencia de respuesta",
+      "availability": "Disponibilidad 24/7",
+      "concurrent": "∞ llamadas concurrentes",
+      "mcp": "100% compatible con MCP"
+    }
+  },
+  "howItWorks": {
+    "title": "Desde que suena el teléfono hasta que se resuelve — en segundos",
+    "step1": {
+      "title": "El cliente llama",
+      "description": "Tu número de teléfono suena. Nuestra infraestructura intercepta y dirige al agente de IA al instante."
+    },
+    "step2": {
+      "title": "El agente entiende",
+      "description": "El procesamiento del lenguaje natural captura la intención. El agente consulta tus servidores MCP en tiempo real (calendario, CRM, base de datos, etc.)"
+    },
+    "step3": {
+      "title": "Problema resuelto",
+      "description": "Cita reservada. Pregunta respondida. Ticket creado. Sin necesidad de humanos."
+    }
+  },
+  "useCases": {
+    "title": "Una plataforma. Todas las industrias.",
+    "subtitle": "Nuestros agentes de IA se conectan a tus herramientas de negocio a través de MCP — el estándar universal para la comunicación de IA a herramientas.",
+    "sectors": {
+      "healthcare": {
+        "name": "Salud",
+        "pain": "Los pacientes esperan en espera para reservar citas",
+        "solution": "La IA reserva espacios en tiempo real, verifica seguros, envía recordatorios",
+        "mcp": ["Google Calendar MCP", "EHR Database MCP"]
+      },
+      "realEstate": {
+        "name": "Inmobiliaria",
+        "pain": "Los prospectos llaman fuera de horario, los agentes pierden clientes",
+        "solution": "La IA califica leads, programa visitas a propiedades, envía información",
+        "mcp": ["CRM MCP", "Calendar MCP"]
+      },
+      "legal": {
+        "name": "Legal / Bufetes",
+        "pain": "Las llamadas de admisión toman 20 min del tiempo del paralegal",
+        "solution": "La IA recopila detalles del caso, verifica conflictos, reserva consultas",
+        "mcp": ["Case Management MCP", "Calendar MCP"]
+      },
+      "ecommerce": {
+        "name": "Comercio Electrónico",
+        "pain": "Las llamadas WISMO inundan las líneas de soporte",
+        "solution": "La IA verifica el estado del pedido, inicia devoluciones, actualiza direcciones",
+        "mcp": ["Orders DB MCP", "Shipping MCP"]
+      },
+      "hospitality": {
+        "name": "Hostelería",
+        "pain": "Recepción abrumada con solicitudes de reserva",
+        "solution": "La IA reserva habitaciones, responde preguntas sobre servicios, maneja info de check-in",
+        "mcp": ["Property Management MCP", "Calendar MCP"]
+      },
+      "automotive": {
+        "name": "Automotriz / Talleres",
+        "pain": "Las reservas de servicio requieren devolver la llamada",
+        "solution": "La IA reserva cambios de aceite, verifica disponibilidad de piezas, confirma espacios",
+        "mcp": ["Workshop DB MCP", "Calendar MCP"]
+      }
+    }
+  },
+  "features": {
+    "title": "Infraestructura de IA empresarial. Cero personal de centro de llamadas.",
+    "mcp": {
+      "title": "Integración nativa MCP",
+      "description": "Conecta cualquier herramienta de negocio — CRM, calendario, base de datos, ticketing — utilizando el estándar abierto MCP. Construye una vez, despliega en todas partes."
+    },
+    "latency": {
+      "title": "Latencia inferior a 300ms",
+      "description": "Respuestas tan rápidas que los llamantes nunca sienten la pausa. Nuestra infraestructura está co-ubicada con los PoP de telefonía para un viaje de ida y vuelta ultra bajo."
+    },
+    "voice": {
+      "title": "Voz natural, sin guion",
+      "description": "Impulsado por los últimos modelos de voz a voz. Sin menús IVR. Sin respuestas robóticas. Solo conversación natural."
+    },
+    "concurrent": {
+      "title": "Llamadas concurrentes ilimitadas",
+      "description": "Un agente maneja una llamada o diez mil simultáneamente. Escala sin contratar."
+    },
+    "analytics": {
+      "title": "Analítica completa de conversación",
+      "description": "Cada llamada transcrita, etiquetada y analizada. Conoce lo que tus clientes realmente preguntan."
+    },
+    "security": {
+      "title": "Listo para GDPR y SOC2",
+      "description": "Seguridad y cumplimiento de grado empresarial desde el primer momento. Cumplimiento con HIPAA disponible."
+    }
+  },
+  "socialProof": {
+    "title": "Construido para los negocios que no pueden permitirse perder una llamada",
+    "testimonials": [
+      {
+        "quote": "Redujimos nuestra tasa de inasistencia en un 40% porque la IA comenzó a confirmar y reprogramar citas automáticamente. Se conecta directamente a nuestro calendario.",
+        "author": "Dra. Sarah Chen, Gerente de Clínica"
+      },
+      {
+        "quote": "Los prospectos solían enfriarse durante la noche. Ahora cada llamada después de las 6 pm recibe una calificación completa y una visita programada.",
+        "author": "Marco Rossi, Corredor Inmobiliario"
+      },
+      {
+        "quote": "Estábamos ahogados en llamadas de 'dónde está mi pedido'. CallToAgent eliminó el 70% de nuestro volumen entrante en el primer día.",
+        "author": "Ana Torres, Operaciones de Comercio Electrónico"
+      }
+    ],
+    "companyPlaceholder": "Tu empresa aquí"
+  },
+  "pricing": {
+    "title": "Precios transparentes. Cero personal de centro de llamadas.",
+    "disclaimer": "Sin contratos a largo plazo. Pago mensual. Complemento de cumplimiento HIPAA disponible. Integración de servidor MCP personalizada incluida en Growth y Enterprise.",
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "minutes": "1,000 min/mes",
+        "mcp": "2 Integraciones MCP",
+        "concurrent": "10 Llamadas concurrentes",
+        "analytics": "Analítica básica",
+        "support": "Soporte por correo",
+        "price": "$99",
+        "cta": "Empezar"
+      },
+      "growth": {
+        "name": "Growth",
+        "minutes": "10,000 min/mes",
+        "mcp": "10 Integraciones MCP",
+        "concurrent": "100 Llamadas concurrentes",
+        "analytics": "Analítica avanzada",
+        "support": "Soporte prioritario",
+        "price": "$499",
+        "cta": "Iniciar prueba gratuita"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "minutes": "Minutos ilimitados",
+        "mcp": "Integraciones MCP ilimitadas",
+        "concurrent": "Llamadas concurrentes ilimitadas",
+        "analytics": "Analítica personalizada",
+        "support": "CSM dedicado",
+        "price": "Personalizado",
+        "cta": "Contactar a Ventas"
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas comunes",
+    "items": [
+      {
+        "q": "¿Qué es MCP y por qué es importante?",
+        "a": "MCP (Model Context Protocol) es el estándar abierto desarrollado por Anthropic que permite a los agentes de IA conectarse a cualquier herramienta de negocio. Significa que nuestro agente puede reservar en tu calendario, consultar tu base de datos o actualizar tu CRM, en tiempo real durante la llamada."
+      },
+      {
+        "q": "¿Sabrán los llamantes que están hablando con una IA?",
+        "a": "Nuestros agentes son transparentes cuando se requiere, pero suenan y responden como humanos. La mayoría de las empresas eligen informarlo, y a los clientes no les importa cuando la experiencia es más rápida y útil."
+      },
+      {
+        "q": "¿Cuánto tiempo toma la integración?",
+        "a": "Una integración estándar con 2-3 servidores MCP toma de 2 a 5 días hábiles. Nosotros nos encargamos de la configuración."
+      },
+      {
+        "q": "¿Qué sucede cuando la IA no puede resolver un problema?",
+        "a": "El agente transfiere la llamada sin problemas a un agente humano con un resumen completo del contexto. Ningún llamante se queda atrás."
+      },
+      {
+        "q": "¿Son seguros los datos de mis clientes?",
+        "a": "Todas las llamadas están encriptadas en tránsito y en reposo. Ofrecemos cumplimiento SOC2 como estándar y cumplimiento HIPAA para clientes del sector salud."
+      },
+      {
+        "q": "¿Soportan otros idiomas además del inglés?",
+        "a": "Sí. Nuestros agentes soportan más de 30 idiomas. Español, francés, portugués, alemán y más desde el primer momento."
+      }
+    ]
+  },
+  "finalCTA": {
+    "headline": "Deja de perder llamadas. Empieza a resolverlas.",
+    "subheadline": "Únete a los negocios que reemplazan la música de espera con resolución instantánea por IA.",
+    "primaryCTA": "Probar Demo en vivo",
+    "secondaryCTA": "Hablar con Ventas",
+    "footerText": "Sin tarjeta de crédito · Configuración en 48 horas · Cancela en cualquier momento"
+  },
+  "footer": {
+    "tagline": "Infraestructura de voz con IA para negocios modernos",
+    "rights": "© 2025 CallToAgent. Todos los derechos reservados.",
+    "links": {
+      "product": "Producto",
+      "pricing": "Precios",
+      "useCases": "Casos de uso",
+      "blog": "Blog",
+      "docs": "Docs",
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    }
+  }
+}

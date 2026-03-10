@@ -1,0 +1,40 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import useTranslation from "next-translate/useTranslation";
+
+const LanguageSwitcher = () => {
+  const pathname = usePathname();
+  const { lang } = useTranslation();
+
+  const getPathForLocale = (locale: string) => {
+    const segments = pathname.split("/");
+    segments[1] = locale;
+    return segments.join("/");
+  };
+
+  return (
+    <div className="flex items-center space-x-2 text-sm font-medium">
+      <Link
+        href={getPathForLocale("en")}
+        className={`${
+          lang === "en" ? "text-accent" : "text-gray-400 hover:text-white"
+        } transition-colors uppercase`}
+      >
+        EN
+      </Link>
+      <span className="text-gray-600">|</span>
+      <Link
+        href={getPathForLocale("es")}
+        className={`${
+          lang === "es" ? "text-accent" : "text-gray-400 hover:text-white"
+        } transition-colors uppercase`}
+      >
+        ES
+      </Link>
+    </div>
+  );
+};
+
+export default LanguageSwitcher;

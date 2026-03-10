@@ -1,0 +1,210 @@
+{
+  "navbar": {
+    "howItWorks": "How it Works",
+    "useCases": "Use Cases",
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "requestDemo": "Request Demo"
+  },
+  "hero": {
+    "headline": "Your AI agent answers every call. Instantly. Connected to your business.",
+    "subheadline": "Replace your customer service phone line with an AI voice agent that books appointments, queries your database, and resolves issues — 24/7, without human intervention.",
+    "primaryCTA": "Try Live Demo",
+    "secondaryCTA": "See How It Works",
+    "socialProof": "Trusted by companies in healthcare, legal, real estate, hospitality, and e-commerce",
+    "stats": {
+      "latency": "< 300ms response latency",
+      "availability": "24/7 availability",
+      "concurrent": "∞ concurrent calls",
+      "mcp": "100% MCP-compatible"
+    }
+  },
+  "howItWorks": {
+    "title": "From phone ring to resolved — in seconds",
+    "step1": {
+      "title": "Customer calls",
+      "description": "Your phone number rings. Our infrastructure intercepts and routes to the AI agent instantly."
+    },
+    "step2": {
+      "title": "Agent understands",
+      "description": "Natural language processing captures intent. The agent queries your MCP servers in real-time (calendar, CRM, database, etc.)"
+    },
+    "step3": {
+      "title": "Issue resolved",
+      "description": "Appointment booked. Question answered. Ticket created. No human needed."
+    }
+  },
+  "useCases": {
+    "title": "One platform. Every industry.",
+    "subtitle": "Our AI agents connect to your business tools via MCP — the universal standard for AI-to-tool communication.",
+    "sectors": {
+      "healthcare": {
+        "name": "Healthcare",
+        "pain": "Patients wait on hold to book appointments",
+        "solution": "AI books slots in real-time, checks insurance, sends reminders",
+        "mcp": ["Google Calendar MCP", "EHR Database MCP"]
+      },
+      "realEstate": {
+        "name": "Real Estate",
+        "pain": "Prospects call after hours, agents miss leads",
+        "solution": "AI qualifies leads, schedules property viewings, sends info",
+        "mcp": ["CRM MCP", "Calendar MCP"]
+      },
+      "legal": {
+        "name": "Legal / Law Firms",
+        "pain": "Intake calls take 20 min of paralegal time",
+        "solution": "AI collects case details, checks conflicts, books consultations",
+        "mcp": ["Case Management MCP", "Calendar MCP"]
+      },
+      "ecommerce": {
+        "name": "E-commerce",
+        "pain": "WISMO calls flood support lines",
+        "solution": "AI checks order status, initiates returns, updates addresses",
+        "mcp": ["Orders DB MCP", "Shipping MCP"]
+      },
+      "hospitality": {
+        "name": "Hospitality",
+        "pain": "Front desk overwhelmed with reservation requests",
+        "solution": "AI books rooms, answers amenity questions, handles check-in info",
+        "mcp": ["Property Management MCP", "Calendar MCP"]
+      },
+      "automotive": {
+        "name": "Automotive / Workshops",
+        "pain": "Service bookings require calling back",
+        "solution": "AI books oil changes, checks parts availability, confirms slots",
+        "mcp": ["Workshop DB MCP", "Calendar MCP"]
+      }
+    }
+  },
+  "features": {
+    "title": "Enterprise AI infrastructure. Zero call center headcount.",
+    "mcp": {
+      "title": "MCP-Native Integration",
+      "description": "Connect any business tool — CRM, calendar, database, ticketing — using the open MCP standard. Build once, deploy everywhere."
+    },
+    "latency": {
+      "title": "Sub-300ms Latency",
+      "description": "Responses so fast callers never feel the pause. Our infrastructure is co-located with telephony PoPs for ultra-low roundtrip."
+    },
+    "voice": {
+      "title": "Natural Voice, Zero Script",
+      "description": "Powered by the latest speech-to-speech models. No IVR menus. No robotic responses. Just natural conversation."
+    },
+    "concurrent": {
+      "title": "Unlimited Concurrent Calls",
+      "description": "One agent handles one call or ten thousand simultaneously. Scale without hiring."
+    },
+    "analytics": {
+      "title": "Full Conversation Analytics",
+      "description": "Every call transcribed, tagged, and analyzed. Know what your customers are really asking."
+    },
+    "security": {
+      "title": "GDPR & SOC2 Ready",
+      "description": "Enterprise-grade security and compliance out of the box. HIPAA compliance available."
+    }
+  },
+  "socialProof": {
+    "title": "Built for the businesses that can't afford to miss a call",
+    "testimonials": [
+      {
+        "quote": "We cut our no-show rate by 40% because the AI started confirming and rebooking appointments automatically. It connects directly to our calendar.",
+        "author": "Dr. Sarah Chen, Clinic Manager"
+      },
+      {
+        "quote": "Leads used to go cold overnight. Now every call after 6pm gets a full qualification and a booked viewing.",
+        "author": "Marco Rossi, Real Estate Broker"
+      },
+      {
+        "quote": "We were drowning in 'where's my order' calls. CallToAgent wiped out 70% of our inbound volume on day one.",
+        "author": "Ana Torres, E-commerce Operations"
+      }
+    ],
+    "companyPlaceholder": "Your company here"
+  },
+  "pricing": {
+    "title": "Transparent pricing. No call center headcount.",
+    "disclaimer": "No long-term contracts. Pay monthly. HIPAA compliance add-on available. Custom MCP server integration included in Growth and Enterprise.",
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "minutes": "1,000 min/mo",
+        "mcp": "2 MCP Integrations",
+        "concurrent": "10 Concurrent calls",
+        "analytics": "Basic Analytics",
+        "support": "Email Support",
+        "price": "$99",
+        "cta": "Get Started"
+      },
+      "growth": {
+        "name": "Growth",
+        "minutes": "10,000 min/mo",
+        "mcp": "10 MCP Integrations",
+        "concurrent": "100 Concurrent calls",
+        "analytics": "Advanced Analytics",
+        "support": "Priority Support",
+        "price": "$499",
+        "cta": "Start Free Trial"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "minutes": "Unlimited minutes",
+        "mcp": "Unlimited MCP Integrations",
+        "concurrent": "Unlimited Concurrent calls",
+        "analytics": "Custom Analytics",
+        "support": "Dedicated CSM",
+        "price": "Custom",
+        "cta": "Contact Sales"
+      }
+    }
+  },
+  "faq": {
+    "title": "Common questions",
+    "items": [
+      {
+        "q": "What is MCP and why does it matter?",
+        "a": "MCP (Model Context Protocol) is the open standard developed by Anthropic that lets AI agents connect to any business tool. It means our agent can book in your calendar, look up your database, or update your CRM — in real time during the call."
+      },
+      {
+        "q": "Will callers know they're talking to an AI?",
+        "a": "Our agents are transparent when required, but they sound and respond like humans. Most businesses choose to disclose — and customers don't mind when the experience is faster and more helpful."
+      },
+      {
+        "q": "How long does integration take?",
+        "a": "A standard integration with 2-3 MCP servers takes 2-5 business days. We handle the setup."
+      },
+      {
+        "q": "What happens when the AI can't resolve an issue?",
+        "a": "The agent seamlessly transfers the call to a human agent with a full context summary. No caller left behind."
+      },
+      {
+        "q": "Is my customer data secure?",
+        "a": "All calls are encrypted in transit and at rest. We offer SOC2 compliance as standard and HIPAA compliance for healthcare customers."
+      },
+      {
+        "q": "Do you support languages other than English?",
+        "a": "Yes. Our agents support 30+ languages. Spanish, French, Portuguese, German and more out of the box."
+      }
+    ]
+  },
+  "finalCTA": {
+    "headline": "Stop missing calls. Start resolving them.",
+    "subheadline": "Join the businesses replacing hold music with instant AI resolution.",
+    "primaryCTA": "Try Live Demo",
+    "secondaryCTA": "Talk to Sales",
+    "footerText": "No credit card required · Setup in 48 hours · Cancel anytime"
+  },
+  "footer": {
+    "tagline": "AI voice infrastructure for modern businesses",
+    "rights": "© 2025 CallToAgent. All rights reserved.",
+    "links": {
+      "product": "Product",
+      "pricing": "Pricing",
+      "useCases": "Use Cases",
+      "blog": "Blog",
+      "docs": "Docs",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  }
+}
