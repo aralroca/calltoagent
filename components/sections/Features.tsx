@@ -1,6 +1,6 @@
 "use client";
 
-import useTranslation from "next-translate/useTranslation";
+import useAppTranslation from "@/hooks/useAppTranslation";
 import { motion } from "framer-motion";
 import {
   Plug,
@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 const Features = () => {
-  const { t } = useTranslation("common");
+  const { t } = useAppTranslation();
 
   const features = [
     {

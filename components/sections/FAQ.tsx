@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import useTranslation from "next-translate/useTranslation";
+import useAppTranslation from "@/hooks/useAppTranslation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
 
 const FAQ = () => {
-  const { t } = useTranslation("common");
+  const { t } = useAppTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const items = t("faq.items", {}, { returnObjects: true });

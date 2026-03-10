@@ -1,12 +1,12 @@
 "use client";
 
-import useTranslation from "next-translate/useTranslation";
+import useAppTranslation from "@/hooks/useAppTranslation";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import DemoButton from "../ui/DemoButton";
 
 const Pricing = () => {
-  const { t } = useTranslation("common");
+  const { t } = useAppTranslation();
 
   const tiers = [
     {
@@ -55,7 +55,7 @@ const Pricing = () => {
             >
               {tier.badge && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">
-                  Most Popular
+                  {t("pricing.popular")}
                 </div>
               )}
 

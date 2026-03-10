@@ -1,11 +1,11 @@
 "use client";
 
-import useTranslation from "next-translate/useTranslation";
+import useAppTranslation from "@/hooks/useAppTranslation";
 import { motion } from "framer-motion";
 import DemoButton from "../ui/DemoButton";
 
 const CTA = () => {
-  const { t } = useTranslation("common");
+  const { t } = useAppTranslation();
 
   return (
     <section className="py-24 bg-primary relative overflow-hidden">

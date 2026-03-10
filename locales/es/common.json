@@ -5,7 +5,8 @@
     "features": "Características",
     "pricing": "Precios",
     "faq": "Preguntas frecuentes",
-    "requestDemo": "Solicitar Demo"
+    "requestDemo": "Solicitar Demo",
+    "language": "Idioma"
   },
   "hero": {
     "headline": "Tu agente de IA responde cada llamada. Al instante. Conectado a tu negocio.",
@@ -18,6 +19,21 @@
       "availability": "Disponibilidad 24/7",
       "concurrent": "∞ llamadas concurrentes",
       "mcp": "100% compatible con MCP"
+    },
+    "sectors": [
+      "SALUD",
+      "LEGAL",
+      "INMOBILIARIO",
+      "HOSPITALIDAD",
+      "E-COMMERCE"
+    ],
+    "mockup": {
+      "incoming": "Llamada entrante...",
+      "active": "Agente de IA activo",
+      "processing": "Procesando intención...",
+      "appointment": "📅 Cita reservada",
+      "record": "🗃️ Registro encontrado",
+      "resolved": "✅ Incidencia resuelta"
     }
   },
   "howItWorks": {
@@ -43,38 +59,61 @@
         "name": "Salud",
         "pain": "Los pacientes esperan en espera para reservar citas",
         "solution": "La IA reserva espacios en tiempo real, verifica seguros, envía recordatorios",
-        "mcp": ["Google Calendar MCP", "EHR Database MCP"]
+        "mcp": [
+          "Google Calendar MCP",
+          "EHR Database MCP"
+        ]
       },
       "realEstate": {
         "name": "Inmobiliaria",
         "pain": "Los prospectos llaman fuera de horario, los agentes pierden clientes",
         "solution": "La IA califica leads, programa visitas a propiedades, envía información",
-        "mcp": ["CRM MCP", "Calendar MCP"]
+        "mcp": [
+          "CRM MCP",
+          "Calendar MCP"
+        ]
       },
       "legal": {
         "name": "Legal / Bufetes",
         "pain": "Las llamadas de admisión toman 20 min del tiempo del paralegal",
         "solution": "La IA recopila detalles del caso, verifica conflictos, reserva consultas",
-        "mcp": ["Case Management MCP", "Calendar MCP"]
+        "mcp": [
+          "Case Management MCP",
+          "Calendar MCP"
+        ]
       },
       "ecommerce": {
         "name": "Comercio Electrónico",
         "pain": "Las llamadas WISMO inundan las líneas de soporte",
         "solution": "La IA verifica el estado del pedido, inicia devoluciones, actualiza direcciones",
-        "mcp": ["Orders DB MCP", "Shipping MCP"]
+        "mcp": [
+          "Orders DB MCP",
+          "Shipping MCP"
+        ]
       },
       "hospitality": {
         "name": "Hostelería",
         "pain": "Recepción abrumada con solicitudes de reserva",
         "solution": "La IA reserva habitaciones, responde preguntas sobre servicios, maneja info de check-in",
-        "mcp": ["Property Management MCP", "Calendar MCP"]
+        "mcp": [
+          "Property Management MCP",
+          "Calendar MCP"
+        ]
       },
       "automotive": {
         "name": "Automotriz / Talleres",
         "pain": "Las reservas de servicio requieren devolver la llamada",
         "solution": "La IA reserva cambios de aceite, verifica disponibilidad de piezas, confirma espacios",
-        "mcp": ["Workshop DB MCP", "Calendar MCP"]
+        "mcp": [
+          "Workshop DB MCP",
+          "Calendar MCP"
+        ]
       }
+    },
+    "labels": {
+      "pain": "Punto de dolor",
+      "solution": "Nuestra solución",
+      "mcp": "Integraciones MCP"
     }
   },
   "features": {
@@ -156,7 +195,8 @@
         "price": "Personalizado",
         "cta": "Contactar a Ventas"
       }
-    }
+    },
+    "popular": "Más popular"
   },
   "faq": {
     "title": "Preguntas comunes",
@@ -205,6 +245,12 @@
       "docs": "Docs",
       "privacy": "Privacidad",
       "terms": "Términos"
+    },
+    "columns": {
+      "platform": "Plataforma",
+      "resources": "Recursos",
+      "legal": "Legal",
+      "support": "Soporte"
     }
   }
 }
