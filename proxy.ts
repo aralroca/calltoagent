@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import i18n from '../i18n.json';
+import i18n from './i18n.json';
 
 const locales = i18n.locales;
 const defaultLocale = i18n.defaultLocale;
