@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import useTranslation from "next-translate/useTranslation";
+import useAppTranslation from "@/hooks/useAppTranslation";
 
 const LanguageSwitcher = () => {
   const pathname = usePathname();
-  const { lang } = useTranslation();
+  const { lang } = useAppTranslation();
 
   const getPathForLocale = (locale: string) => {
     const segments = pathname.split("/");

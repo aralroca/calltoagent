@@ -1,11 +1,11 @@
 "use client";
 
-import useTranslation from "next-translate/useTranslation";
+import useAppTranslation from "@/hooks/useAppTranslation";
 import { motion } from "framer-motion";
 import { PhoneCall, Cpu, CheckCircle, ArrowRight } from "lucide-react";
 
 const HowItWorks = () => {
-  const { t } = useTranslation("common");
+  const { t } = useAppTranslation();
 
   const steps = [
     {

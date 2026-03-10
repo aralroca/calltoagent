@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import useTranslation from "next-translate/useTranslation";
+import useAppTranslation from "@/hooks/useAppTranslation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Stethoscope,
@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 const UseCases = () => {
-  const { t } = useTranslation("common");
+  const { t } = useAppTranslation();
 
   const sectors = [
     { id: "healthcare", icon: <Stethoscope />, key: "healthcare" },

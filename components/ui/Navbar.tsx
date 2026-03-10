@@ -3,13 +3,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { PhoneCall, Waves, Menu, X } from "lucide-react";
-import useTranslation from "next-translate/useTranslation";
+import useAppTranslation from "@/hooks/useAppTranslation";
 import DemoButton from "./DemoButton";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
-  const { t, lang } = useTranslation("common");
+  const { t, lang } = useAppTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

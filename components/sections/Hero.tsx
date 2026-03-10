@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import useTranslation from "next-translate/useTranslation";
+import useAppTranslation from "@/hooks/useAppTranslation";
 import { motion } from "framer-motion";
 import DemoButton from "../ui/DemoButton";
 import { Zap, Clock, PhoneIncoming, ShieldCheck } from "lucide-react";
@@ -54,7 +54,7 @@ const CountUp = ({ end, suffix = "", duration = 900 }: { end: number; suffix?: s
 };
 
 const Hero = () => {
-  const { t } = useTranslation("common");
+  const { t } = useAppTranslation();
 
   const stats = [
     { key: "latency", icon: <Zap size={18} className="text-accent" />, value: <><span>&lt; </span><CountUp end={300} suffix="ms" /></> },

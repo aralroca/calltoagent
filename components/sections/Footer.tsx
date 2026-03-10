@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { PhoneCall, Waves, Twitter, Linkedin, Github } from "lucide-react";
-import useTranslation from "next-translate/useTranslation";
+import useAppTranslation from "@/hooks/useAppTranslation";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
 
 const Footer = () => {
-  const { t, lang } = useTranslation("common");
+  const { t, lang } = useAppTranslation();
 
   return (
     <footer className="bg-primary pt-20 pb-10 border-t border-white/5">
