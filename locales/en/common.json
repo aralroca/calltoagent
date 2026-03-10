@@ -13,7 +13,7 @@
     "subheadline": "Replace your customer service phone line with an AI voice agent that books appointments, queries your database, and resolves issues — 24/7, without human intervention.",
     "primaryCTA": "Try Live Demo",
     "secondaryCTA": "See How It Works",
-    "socialProof": "Trusted by companies in healthcare, legal, real estate, hospitality, and e-commerce",
+    "socialProof": "Trusted by companies in healthcare, legal, real estate, hospitality, e-commerce, and tourism",
     "stats": {
       "latency": "< 300ms response latency",
       "availability": "24/7 availability",
@@ -25,7 +25,8 @@
       "LEGAL",
       "REAL ESTATE",
       "HOSPITALITY",
-      "E-COMMERCE"
+      "E-COMMERCE",
+      "TOURISM"
     ],
     "mockup": {
       "incoming": "Incoming Call...",
@@ -107,6 +108,15 @@
         "mcp": [
           "Workshop DB MCP",
           "Calendar MCP"
+        ]
+      },
+      "tourism": {
+        "name": "Tourism",
+        "pain": "Travelers waste time searching for and booking local activities",
+        "solution": "AI recommends tours, manages bookings, and answers destination questions instantly",
+        "mcp": [
+          "Tours & Activities MCP",
+          "Booking MCP"
         ]
       }
     },
