@@ -3,12 +3,13 @@
 import useAppTranslation from "@/hooks/useAppTranslation";
 import { motion } from "framer-motion";
 import DemoButton from "../ui/DemoButton";
+import NewsletterForm from "../ui/NewsletterForm";
 
 const CTA = () => {
   const { t } = useAppTranslation();
 
   return (
-    <section className="py-24 bg-primary relative overflow-hidden">
+    <section id="waitlist" className="py-24 bg-primary relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-accent/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-1/2 h-full bg-cyan-400/5 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/2" />
@@ -27,7 +28,7 @@ const CTA = () => {
             {t("finalCTA.subheadline")}
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
+          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-4">
             <DemoButton variant="primary" className="text-lg px-10 w-full sm:w-auto">
               {t("finalCTA.primaryCTA")}
             </DemoButton>
@@ -36,7 +37,12 @@ const CTA = () => {
             </DemoButton>
           </div>
 
-          <p className="text-gray-400 text-sm italic">
+          <p className="text-gray-500 text-sm mb-2">
+            {t("finalCTA.waitlistLabel")}
+          </p>
+          <NewsletterForm />
+
+          <p className="text-gray-300 text-sm mt-6 max-w-lg mx-auto">
             {t("finalCTA.footerText")}
           </p>
         </motion.div>

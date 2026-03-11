@@ -173,40 +173,73 @@
   },
   "pricing": {
     "title": "Transparent pricing. No call center headcount.",
-    "disclaimer": "No long-term contracts. Pay monthly. HIPAA compliance add-on available. Custom MCP server integration included in Growth and Enterprise.",
+    "disclaimer": "No long-term contracts. Pay monthly. HIPAA compliance add-on available. Pre-built MCP integrations included in Starter and Growth.",
+    "kycNote": "* Phone number provisioning requires KYC (identity verification).",
+    "perMonth": "/mo",
     "tiers": {
       "starter": {
         "name": "Starter",
-        "minutes": "1,000 min/mo",
-        "mcp": "2 MCP Integrations",
-        "concurrent": "10 Concurrent calls",
+        "tagline": "Perfect for small businesses starting with AI voice",
+        "minutes": "500 min/mo",
+        "mcp": "2 pre-built MCP integrations",
+        "concurrent": "5 concurrent calls",
+        "phone": "1 phone number included*",
         "analytics": "Basic Analytics",
         "support": "Email Support",
-        "price": "$99",
+        "price": "$115",
         "cta": "Get Started"
       },
       "growth": {
         "name": "Growth",
-        "minutes": "10,000 min/mo",
-        "mcp": "10 MCP Integrations",
-        "concurrent": "100 Concurrent calls",
+        "tagline": "For growing teams that need more capacity",
+        "minutes": "2,500 min/mo",
+        "mcp": "All pre-built MCP integrations",
+        "concurrent": "30 concurrent calls",
+        "phone": "3 phone numbers included*",
         "analytics": "Advanced Analytics",
         "support": "Priority Support",
-        "price": "$499",
+        "price": "$579",
         "cta": "Start Free Trial"
       },
       "enterprise": {
         "name": "Enterprise",
+        "tagline": "Full infrastructure built around your needs",
         "minutes": "Unlimited minutes",
-        "mcp": "Unlimited MCP Integrations",
-        "concurrent": "Unlimited Concurrent calls",
+        "mcp": "Custom integrations built for you",
+        "concurrent": "Unlimited (custom SIP trunks)",
+        "phone": "Custom phone allocation",
         "analytics": "Custom Analytics",
         "support": "Dedicated CSM",
         "price": "Custom",
         "cta": "Contact Sales"
       }
     },
-    "popular": "Most popular"
+    "popular": "Most popular",
+    "consultancy": {
+      "title": "Need help getting started?",
+      "subtitle": "Our experts audit your business, design the solution, and train your team. We work with you end-to-end — not just hand you a platform.",
+      "cta": "Book a Consultancy Call",
+      "services": [
+        {
+          "name": "AI Readiness Assessment",
+          "description": "We audit your business processes, validate AI voice fit, and deliver a strategic report with actionable recommendations.",
+          "price": "$1,735",
+          "duration": "1 day"
+        },
+        {
+          "name": "Full Implementation",
+          "description": "End-to-end setup: agent configuration, MCP integrations, testing, and go-live support. Your team fully operational in days.",
+          "price": "$3,470",
+          "duration": "2–3 days"
+        },
+        {
+          "name": "Team Training Workshop",
+          "description": "Half-day hands-on session to train your team on managing, iterating, and scaling your AI voice agent.",
+          "price": "$2,315",
+          "duration": "Half day"
+        }
+      ]
+    }
   },
   "faq": {
     "title": "Common questions",
@@ -242,11 +275,17 @@
     "subheadline": "Join the businesses replacing hold music with instant AI resolution.",
     "primaryCTA": "Try Live Demo",
     "secondaryCTA": "Talk to Sales",
-    "footerText": "No credit card required · Setup in 48 hours · Cancel anytime"
+    "waitlistLabel": "Join our waiting list for early access:",
+    "waitlistNamePlaceholder": "Your name",
+    "waitlistPlaceholder": "your@email.com",
+    "waitlistSubmit": "Join Waitlist",
+    "waitlistSuccess": "You're on the list! We'll be in touch soon.",
+    "waitlistError": "Something went wrong. Please try again.",
+    "footerText": "No spam, ever. You'll get early access updates, real deployment stories, and the best AI voice insights — straight to your inbox."
   },
   "footer": {
     "tagline": "AI voice infrastructure for modern businesses",
-    "rights": "© 2025 CallToAgent. All rights reserved.",
+    "rights": "© 2026 CallToAgent. All rights reserved.",
     "links": {
       "product": "Product",
       "pricing": "Pricing",

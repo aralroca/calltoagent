@@ -1,8 +1,7 @@
 {
-  "name": "app",
+  "name": "calltoagent",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "AI Voice Agents for Customer Service",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -20,20 +19,23 @@
     "url": "https://github.com/aralroca/calltoagent/issues"
   },
   "homepage": "https://github.com/aralroca/calltoagent#readme",
+  "dependencies": {
+    "framer-motion": "^12.35.2",
+    "lucide-react": "^0.577.0",
+    "next": "^16.1.6",
+    "next-translate": "^3.0.0",
+    "next-translate-plugin": "^3.0.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "resend": "^4.0.0"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^25.4.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.27",
-    "framer-motion": "^12.35.2",
-    "lucide-react": "^0.577.0",
-    "next": "^16.1.6",
-    "next-translate": "^3.0.0",
-    "next-translate-plugin": "^3.0.0",
     "postcss": "^8.5.8",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3"
   }

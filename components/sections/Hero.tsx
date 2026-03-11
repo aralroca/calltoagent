@@ -63,6 +63,7 @@ const Hero = () => {
     { key: "mcp", icon: <ShieldCheck size={18} className="text-accent" />, value: <><CountUp end={100} suffix="%" /></> },
   ];
 
+  const isEs = t("pricing.tiers.starter.price").startsWith("99");
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -70,7 +71,11 @@ const Hero = () => {
     applicationCategory: "BusinessApplication",
     description:
       "AI voice agent infrastructure for customer service, connected to business MCP servers",
-    offers: { "@type": "Offer", price: "99", priceCurrency: "USD" },
+    offers: {
+      "@type": "Offer",
+      price: isEs ? "99" : "115",
+      priceCurrency: isEs ? "EUR" : "USD",
+    },
   };
 
   return (

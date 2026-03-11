@@ -4,6 +4,7 @@ import { useState } from "react";
 import useAppTranslation from "@/hooks/useAppTranslation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 const FAQ = () => {
   const { t } = useAppTranslation();
@@ -37,7 +38,10 @@ const FAQ = () => {
               className="border border-gray-100 rounded-xl overflow-hidden"
             >
               <button
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                onClick={() => {
+                  if (openIndex !== i) trackEvent("select_content", { content_type: "faq", item_id: `faq_${i}` });
+                  setOpenIndex(openIndex === i ? null : i);
+                }}
                 className="w-full flex items-center justify-between p-6 text-left hover:bg-background-alt transition-colors"
               >
                 <span className="text-lg font-bold text-primary">{item.q}</span>

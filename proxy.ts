@@ -57,11 +57,17 @@ export function proxy(request: NextRequest) {
     });
   }
 
-  // Redirect to locale-prefixed path
+  // Root path: rewrite (not redirect) to default locale — preserves URL for SEO
+  if (pathname === '/') {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${defaultLocale}`;
+    return NextResponse.rewrite(url);
+  }
+
+  // Other non-locale paths: redirect with locale prefix
   const locale = getLocale(request);
   const url = request.nextUrl.clone();
-  url.pathname = `/${locale}${pathname === '/' ? '' : pathname}`;
-
+  url.pathname = `/${locale}${pathname}`;
   return NextResponse.redirect(url);
 }
 

@@ -173,40 +173,73 @@
   },
   "pricing": {
     "title": "Precios transparentes. Cero personal de centro de llamadas.",
-    "disclaimer": "Sin contratos a largo plazo. Pago mensual. Complemento de cumplimiento HIPAA disponible. Integración de servidor MCP personalizada incluida en Growth y Enterprise.",
+    "disclaimer": "Sin contratos a largo plazo. Pago mensual en euros. Complemento de cumplimiento HIPAA disponible. Integraciones MCP preconfiguradas incluidas en Starter y Growth.",
+    "kycNote": "* La asignación de número de teléfono requiere KYC (verificación de identidad).",
+    "perMonth": "/mes",
     "tiers": {
       "starter": {
         "name": "Starter",
-        "minutes": "1,000 min/mes",
-        "mcp": "2 Integraciones MCP",
-        "concurrent": "10 Llamadas concurrentes",
+        "tagline": "Perfecto para pequeñas empresas que empiezan con voz IA",
+        "minutes": "500 min/mes",
+        "mcp": "2 integraciones MCP preconfiguradas",
+        "concurrent": "5 llamadas concurrentes",
+        "phone": "1 número de teléfono incluido*",
         "analytics": "Analítica básica",
         "support": "Soporte por correo",
-        "price": "$99",
+        "price": "99€",
         "cta": "Empezar"
       },
       "growth": {
         "name": "Growth",
-        "minutes": "10,000 min/mes",
-        "mcp": "10 Integraciones MCP",
-        "concurrent": "100 Llamadas concurrentes",
+        "tagline": "Para equipos en crecimiento que necesitan más capacidad",
+        "minutes": "2.500 min/mes",
+        "mcp": "Todas las integraciones MCP preconfiguradas",
+        "concurrent": "30 llamadas concurrentes",
+        "phone": "3 números de teléfono incluidos*",
         "analytics": "Analítica avanzada",
         "support": "Soporte prioritario",
-        "price": "$499",
+        "price": "499€",
         "cta": "Iniciar prueba gratuita"
       },
       "enterprise": {
         "name": "Enterprise",
+        "tagline": "Infraestructura completa construida según tus necesidades",
         "minutes": "Minutos ilimitados",
-        "mcp": "Integraciones MCP ilimitadas",
-        "concurrent": "Llamadas concurrentes ilimitadas",
+        "mcp": "Integraciones personalizadas desarrolladas para ti",
+        "concurrent": "Ilimitado (SIP trunks personalizados)",
+        "phone": "Asignación de teléfonos personalizada",
         "analytics": "Analítica personalizada",
         "support": "CSM dedicado",
         "price": "Personalizado",
         "cta": "Contactar a Ventas"
       }
     },
-    "popular": "Más popular"
+    "popular": "Más popular",
+    "consultancy": {
+      "title": "¿Necesitas ayuda para empezar?",
+      "subtitle": "Nuestros expertos auditan tu negocio, diseñan la solución y forman a tu equipo. Trabajamos contigo de principio a fin, no solo te entregamos una plataforma.",
+      "cta": "Reservar llamada de consultoría",
+      "services": [
+        {
+          "name": "Evaluación de Madurez IA",
+          "description": "Auditamos tus procesos de negocio, validamos el encaje con voz IA y entregamos un informe estratégico con recomendaciones accionables.",
+          "price": "1.500€",
+          "duration": "1 día"
+        },
+        {
+          "name": "Implementación Completa",
+          "description": "Configuración integral: agente, integraciones MCP, pruebas y soporte en el lanzamiento. Tu equipo operativo en días.",
+          "price": "3.000€",
+          "duration": "2–3 días"
+        },
+        {
+          "name": "Taller de Formación del Equipo",
+          "description": "Sesión práctica de medio día para que tu equipo gestione, itere y escale el agente de voz IA.",
+          "price": "2.000€",
+          "duration": "Medio día"
+        }
+      ]
+    }
   },
   "faq": {
     "title": "Preguntas comunes",
@@ -242,11 +275,17 @@
     "subheadline": "Únete a los negocios que reemplazan la música de espera con resolución instantánea por IA.",
     "primaryCTA": "Probar Demo en vivo",
     "secondaryCTA": "Hablar con Ventas",
-    "footerText": "Sin tarjeta de crédito · Configuración en 48 horas · Cancela en cualquier momento"
+    "waitlistLabel": "Únete a nuestra lista de espera para acceso anticipado:",
+    "waitlistNamePlaceholder": "Tu nombre",
+    "waitlistPlaceholder": "tu@email.com",
+    "waitlistSubmit": "Unirme",
+    "waitlistSuccess": "¡Estás en la lista! Te contactaremos pronto.",
+    "waitlistError": "Algo salió mal. Inténtalo de nuevo.",
+    "footerText": "Sin spam, nunca. Acceso anticipado, casos reales de implantación y los mejores insights sobre voz IA — directo a tu bandeja de entrada."
   },
   "footer": {
     "tagline": "Infraestructura de voz con IA para negocios modernos",
-    "rights": "© 2025 CallToAgent. Todos los derechos reservados.",
+    "rights": "© 2026 CallToAgent. Todos los derechos reservados.",
     "links": {
       "product": "Producto",
       "pricing": "Precios",
