@@ -13,7 +13,7 @@
     "subheadline": "Reemplaza tu línea telefónica de atención al cliente con un agente de voz con IA que reserva citas, consulta tu base de datos y resuelve problemas — 24/7, sin intervención humana.",
     "primaryCTA": "Probar Demo en vivo",
     "secondaryCTA": "Ver cómo funciona",
-    "socialProof": "Confiado por empresas en salud, legal, inmobiliaria, hostelería y comercio electrónico",
+    "socialProof": "Confiado por empresas en salud, legal, inmobiliaria, hostelería, comercio electrónico y turismo",
     "stats": {
       "latency": "< 300ms de latencia de respuesta",
       "availability": "Disponibilidad 24/7",
@@ -25,7 +25,8 @@
       "LEGAL",
       "INMOBILIARIO",
       "HOSPITALIDAD",
-      "E-COMMERCE"
+      "E-COMMERCE",
+      "TURISMO"
     ],
     "mockup": {
       "incoming": "Llamada entrante...",
@@ -107,6 +108,15 @@
         "mcp": [
           "Workshop DB MCP",
           "Calendar MCP"
+        ]
+      },
+      "tourism": {
+        "name": "Turismo",
+        "pain": "Los viajeros pierden tiempo buscando y reservando actividades locales",
+        "solution": "La IA recomienda tours, gestiona reservas y responde preguntas sobre el destino al instante",
+        "mcp": [
+          "Tours & Activities MCP",
+          "Booking MCP"
         ]
       }
     },

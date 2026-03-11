@@ -10,6 +10,7 @@ import {
   ShoppingCart,
   Hotel,
   CarFront,
+  Plane,
   AlertCircle,
   Lightbulb
 } from "lucide-react";
@@ -24,6 +25,7 @@ const UseCases = () => {
     { id: "ecommerce", icon: <ShoppingCart />, key: "ecommerce" },
     { id: "hospitality", icon: <Hotel />, key: "hospitality" },
     { id: "automotive", icon: <CarFront />, key: "automotive" },
+    { id: "tourism", icon: <Plane />, key: "tourism" },
   ];
 
   const [activeSector, setActiveSector] = useState(sectors[0].id);
