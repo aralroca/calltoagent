@@ -25,6 +25,9 @@ export async function generateMetadata({
     title: "CallToAgent — AI Voice Agents for Customer Service | MCP-Connected",
     description:
       "Replace your customer service phone line with an AI voice agent that books appointments, queries databases, and resolves issues 24/7. MCP-native. Sub-300ms latency. Every industry.",
+    authors: [{ name: "CallToAgent Team", url: "https://calltoagent.com" }],
+    creator: "CallToAgent",
+    publisher: "CallToAgent",
     keywords: [
       "AI voice agent",
       "AI customer service",
@@ -44,6 +47,14 @@ export async function generateMetadata({
         "AI voice agents connected to your business tools via MCP. Book appointments, query databases, resolve issues — 24/7.",
       url: `https://calltoagent.com/${locale}`,
       siteName: "CallToAgent",
+      images: [
+        {
+          url: "/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: "CallToAgent — AI Voice Agents for Customer Service",
+        },
+      ],
       type: "website",
       locale: locale === "es" ? "es_ES" : "en_US",
     },
@@ -52,6 +63,7 @@ export async function generateMetadata({
       title: "CallToAgent — AI Voice Agents for Customer Service",
       description:
         "AI voice agents connected to your business tools via MCP.",
+      images: ["/og-image.jpg"],
     },
     alternates: {
       canonical: `https://calltoagent.com/${locale}`,
