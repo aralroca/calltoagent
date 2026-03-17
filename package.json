@@ -20,8 +20,11 @@
   },
   "homepage": "https://github.com/aralroca/calltoagent#readme",
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.8.2",
+    "@types/negotiator": "^0.6.4",
     "framer-motion": "^12.35.2",
     "lucide-react": "^0.577.0",
+    "negotiator": "^1.0.0",
     "next": "^16.1.6",
     "next-translate": "^3.0.0",
     "next-translate-plugin": "^3.0.0",

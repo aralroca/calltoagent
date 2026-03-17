@@ -1,3 +1,5 @@
+import { match as matchLocale } from '@formatjs/intl-localematcher';
+import Negotiator from 'negotiator';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import i18n from './i18n.json';
@@ -11,36 +13,21 @@ function getLocale(request: NextRequest): string {
   if (cookieLocale && locales.includes(cookieLocale)) return cookieLocale;
 
   // Then check Accept-Language header
-  const acceptLanguage = request.headers.get('accept-language') ?? '';
-  for (const part of acceptLanguage.split(',')) {
-    const lang = part.split(';')[0].trim().split('-')[0];
-    if (locales.includes(lang)) return lang;
-  }
+  const negotiatorHeaders: Record<string, string> = {};
+  request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
-  return defaultLocale;
+  // @ts-ignore
+  const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
+
+  try {
+    return matchLocale(languages, locales, defaultLocale);
+  } catch (error) {
+    return defaultLocale;
+  }
 }
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
-
-  // Skip internal Next.js paths and static files
-  if (
-    pathname.startsWith('/_next') ||
-    pathname.startsWith('/api') ||
-    pathname.includes('.') ||
-    pathname.endsWith('/ads.txt') ||
-    pathname.endsWith('/favicon.ico') ||
-    pathname.endsWith('/favicon.svg') ||
-    pathname.endsWith('/logo.png') ||
-    pathname.endsWith('/robots.txt') ||
-    pathname.startsWith('/scripts/') ||
-    pathname.endsWith('/manifest.json') ||
-    pathname.endsWith('/apple-touch-icon.png') ||
-    pathname.startsWith('/sounds/') ||
-    pathname.startsWith('/images/')
-  ) {
-    return NextResponse.next();
-  }
 
   // Check if the path already starts with a locale
   const pathnameHasLocale = locales.some(
@@ -57,20 +44,20 @@ export function proxy(request: NextRequest) {
     });
   }
 
-  // Root path: rewrite (not redirect) to default locale — preserves URL for SEO
-  if (pathname === '/') {
-    const url = request.nextUrl.clone();
-    url.pathname = `/${defaultLocale}`;
-    return NextResponse.rewrite(url);
-  }
-
-  // Other non-locale paths: redirect with locale prefix
+  // Redirect to locale-prefixed path
   const locale = getLocale(request);
   const url = request.nextUrl.clone();
-  url.pathname = `/${locale}${pathname}`;
-  return NextResponse.redirect(url);
+  url.pathname = `/${locale}${pathname === '/' ? '' : pathname}`;
+
+  return NextResponse.redirect(url, {
+    headers: {
+      'Cache-Control': 'public, max-age=86400',
+    },
+  });
 }
 
+export default proxy;
+
 export const config = {
-  matcher: ['/((?!_next|api|.*\\..*).*)'],
+  matcher: ['/'],
 };
