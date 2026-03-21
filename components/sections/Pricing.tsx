@@ -97,6 +97,7 @@ const Pricing = () => {
                 className="w-full"
                 gaEvent="select_item"
                 gaParams={{ content_type: "pricing", item_id: tier.key }}
+                href={tier.key === "enterprise" ? "mailto:support@calltoagent.com" : undefined}
               >
                 {t(`pricing.tiers.${tier.key}.cta`)}
               </DemoButton>
@@ -166,6 +167,7 @@ const Pricing = () => {
               variant="accent-outline"
               gaEvent="generate_lead"
               gaParams={{ content_type: "consultancy", item_id: "book_call" }}
+              href="mailto:support@calltoagent.com"
             >
               {t("pricing.consultancy.cta")}
             </DemoButton>

@@ -24,7 +24,7 @@ export async function generateMetadata({
     metadataBase: new URL("https://calltoagent.com"),
     title: "CallToAgent — AI Voice Agents for Customer Service | MCP-Connected",
     description:
-      "Replace your customer service phone line with an AI voice agent that books appointments, queries databases, and resolves issues 24/7. MCP-native. Sub-300ms latency. Every industry.",
+      "Replace your customer service phone line with an AI voice agent that books appointments, queries databases, and resolves issues 24/7. MCP-native. Sub-600ms latency. Every industry.",
     authors: [{ name: "CallToAgent Team", url: "https://calltoagent.com" }],
     creator: "CallToAgent",
     publisher: "CallToAgent",
@@ -61,8 +61,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: "CallToAgent — AI Voice Agents for Customer Service",
-      description:
-        "AI voice agents connected to your business tools via MCP.",
+      description: "AI voice agents connected to your business tools via MCP.",
       images: ["/og-image.jpg"],
     },
     alternates: {

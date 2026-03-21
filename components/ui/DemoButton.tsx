@@ -9,6 +9,7 @@ interface DemoButtonProps {
   className?: string;
   gaEvent?: string;
   gaParams?: Record<string, string>;
+  href?: string;
 }
 
 const DemoButton: React.FC<DemoButtonProps> = ({
@@ -17,6 +18,7 @@ const DemoButton: React.FC<DemoButtonProps> = ({
   className = "",
   gaEvent = "generate_lead",
   gaParams,
+  href,
 }) => {
   const baseStyles =
     "px-6 py-3 rounded-lg font-semibold transition-all duration-200 text-center inline-block cursor-pointer";
@@ -35,8 +37,23 @@ const DemoButton: React.FC<DemoButtonProps> = ({
       event_label: typeof children === "string" ? children : "",
       ...gaParams,
     });
-    document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
+    
+    if (!href) {
+      document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
+    }
   };
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        onClick={handleClick}
+        className={`${baseStyles} ${variants[variant]} ${className}`}
+      >
+        {children}
+      </a>
+    );
+  }
 
   return (
     <button

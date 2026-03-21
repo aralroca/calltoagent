@@ -29,10 +29,10 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-4">
-            <DemoButton variant="primary" className="text-lg px-10 w-full sm:w-auto">
+            <DemoButton variant="primary" className="text-lg px-10 w-full sm:w-auto" href="tel:+34930485418">
               {t("finalCTA.primaryCTA")}
             </DemoButton>
-            <DemoButton variant="outline" className="text-lg px-10 w-full sm:w-auto">
+            <DemoButton variant="outline" className="text-lg px-10 w-full sm:w-auto" href="mailto:support@calltoagent.com">
               {t("finalCTA.secondaryCTA")}
             </DemoButton>
           </div>

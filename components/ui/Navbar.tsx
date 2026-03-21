@@ -23,6 +23,7 @@ const Navbar = () => {
     { name: t("navbar.howItWorks"), href: "#how-it-works" },
     { name: t("navbar.useCases"), href: "#use-cases" },
     { name: t("navbar.features"), href: "#features" },
+    { name: t("navbar.comparison"), href: "#comparison" },
     { name: t("navbar.pricing"), href: "#pricing" },
     { name: t("navbar.faq"), href: "#faq" },
   ];
@@ -48,7 +49,7 @@ const Navbar = () => {
 
         <div className="hidden lg:flex items-center space-x-6">
           <LanguageSwitcher />
-          <DemoButton variant="primary" className="py-2 px-4 text-sm">{t("navbar.requestDemo")}</DemoButton>
+          <DemoButton variant="primary" className="py-2 px-4 text-sm" href="tel:+34930485418">{t("navbar.requestDemo")}</DemoButton>
         </div>
 
         <button className="lg:hidden text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -70,7 +71,7 @@ const Navbar = () => {
                   <span className="text-gray-400 text-sm">{t("navbar.language")}</span>
                   <LanguageSwitcher />
                 </div>
-                <DemoButton variant="primary" className="w-full">{t("navbar.requestDemo")}</DemoButton>
+                <DemoButton variant="primary" className="w-full" href="tel:+34930485418">{t("navbar.requestDemo")}</DemoButton>
               </div>
             </div>
           </motion.div>

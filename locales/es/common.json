@@ -4,6 +4,7 @@
     "useCases": "Casos de uso",
     "features": "Características",
     "pricing": "Precios",
+    "comparison": "Comparativa",
     "faq": "Preguntas frecuentes",
     "requestDemo": "Solicitar Demo",
     "language": "Idioma"
@@ -15,7 +16,7 @@
     "secondaryCTA": "Ver cómo funciona",
     "socialProof": "Confiado por empresas en salud, legal, inmobiliaria, hostelería, comercio electrónico y turismo",
     "stats": {
-      "latency": "< 300ms de latencia de respuesta",
+      "latency": "< 600ms de latencia de respuesta",
       "availability": "Disponibilidad 24/7",
       "concurrent": "∞ llamadas concurrentes",
       "mcp": "100% compatible con MCP"
@@ -133,7 +134,7 @@
       "description": "Conecta cualquier herramienta de negocio — CRM, calendario, base de datos, ticketing — utilizando el estándar abierto MCP. Construye una vez, despliega en todas partes."
     },
     "latency": {
-      "title": "Latencia inferior a 300ms",
+      "title": "Latencia inferior a 600ms",
       "description": "Respuestas tan rápidas que los llamantes nunca sienten la pausa. Nuestra infraestructura está co-ubicada con los PoP de telefonía para un viaje de ida y vuelta ultra bajo."
     },
     "voice": {
@@ -300,6 +301,52 @@
       "resources": "Recursos",
       "legal": "Legal",
       "support": "Soporte"
+    }
+  },
+  "comparison": {
+    "title": "¿Por qué CallToAgent?",
+    "subtitle": "La única plataforma nativa de MCP diseñada para empresas, no solo para desarrolladores.",
+    "columns": {
+      "feature": "Característica",
+      "others": "Retell / Vapi",
+      "cta": "CallToAgent"
+    },
+    "rows": {
+      "mcp": {
+        "name": "Conectividad",
+        "others": "APIs propietarias",
+        "cta": "Nativo de MCP (Estándar universal)"
+      },
+      "audience": {
+        "name": "Enfoque",
+        "others": "Desarrolladores",
+        "cta": "Resultados de Negocio"
+      },
+      "speed": {
+        "name": "Tiempo de Lanzamiento",
+        "others": "Semanas/Meses",
+        "cta": "2-5 Días"
+      },
+      "latency": {
+        "name": "Latencia",
+        "others": "Varía según la configuración",
+        "cta": "< 600ms (Garantizado)"
+      },
+      "pricing": {
+        "name": "Precios",
+        "others": "Por uso (Complejo)",
+        "cta": "Tarifa plana (Predecible)"
+      },
+      "compliance": {
+        "name": "Cumplimiento",
+        "others": "Configuración manual",
+        "cta": "Listo para HIPAA y GDPR"
+      },
+      "results": {
+        "name": "ROI Probado",
+        "others": "Herramienta técnica",
+        "cta": "40% menos de inasistencias"
+      }
     }
   }
 }

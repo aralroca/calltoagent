@@ -5,6 +5,7 @@ import Hero from "@/components/sections/Hero";
 import HowItWorks from "@/components/sections/HowItWorks";
 import UseCases from "@/components/sections/UseCases";
 import Features from "@/components/sections/Features";
+import Comparison from "@/components/sections/Comparison";
 import SocialProof from "@/components/sections/SocialProof";
 import Pricing from "@/components/sections/Pricing";
 import FAQ from "@/components/sections/FAQ";
@@ -19,6 +20,7 @@ export default function LandingPage() {
       <HowItWorks />
       <UseCases />
       <Features />
+      <Comparison />
       <SocialProof />
       <Pricing />
       <FAQ />

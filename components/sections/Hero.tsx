@@ -91,7 +91,7 @@ const Hero = () => {
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-xl">{t("hero.subheadline")}</p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
-              <DemoButton variant="primary" className="text-lg px-8">{t("hero.primaryCTA")}</DemoButton>
+              <DemoButton variant="primary" className="text-lg px-8" href="tel:+34930485418">{t("hero.primaryCTA")}</DemoButton>
               <a href="#how-it-works" className="px-8 py-3 rounded-lg font-semibold border-2 border-white/20 text-white hover:bg-white/10 transition-all text-center">
                 {t("hero.secondaryCTA")} ↓
               </a>

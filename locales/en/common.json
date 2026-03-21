@@ -4,6 +4,7 @@
     "useCases": "Use Cases",
     "features": "Features",
     "pricing": "Pricing",
+    "comparison": "Comparison",
     "faq": "FAQ",
     "requestDemo": "Request Demo",
     "language": "Language"
@@ -15,7 +16,7 @@
     "secondaryCTA": "See How It Works",
     "socialProof": "Trusted by companies in healthcare, legal, real estate, hospitality, e-commerce, and tourism",
     "stats": {
-      "latency": "< 300ms response latency",
+      "latency": "< 600ms response latency",
       "availability": "24/7 availability",
       "concurrent": "∞ concurrent calls",
       "mcp": "100% MCP-compatible"
@@ -133,7 +134,7 @@
       "description": "Connect any business tool — CRM, calendar, database, ticketing — using the open MCP standard. Build once, deploy everywhere."
     },
     "latency": {
-      "title": "Sub-300ms Latency",
+      "title": "Sub-600ms Latency",
       "description": "Responses so fast callers never feel the pause. Our infrastructure is co-located with telephony PoPs for ultra-low roundtrip."
     },
     "voice": {
@@ -300,6 +301,52 @@
       "resources": "Resources",
       "legal": "Legal",
       "support": "Support"
+    }
+  },
+  "comparison": {
+    "title": "Why CallToAgent?",
+    "subtitle": "The only MCP-native platform built for businesses, not just developers.",
+    "columns": {
+      "feature": "Feature",
+      "others": "Retell / Vapi",
+      "cta": "CallToAgent"
+    },
+    "rows": {
+      "mcp": {
+        "name": "Connectivity",
+        "others": "Proprietary APIs",
+        "cta": "MCP-Native (Universal standard)"
+      },
+      "audience": {
+        "name": "Focus",
+        "others": "Developers",
+        "cta": "Business Results"
+      },
+      "speed": {
+        "name": "Time to Value",
+        "others": "Weeks/Months",
+        "cta": "2-5 Days"
+      },
+      "latency": {
+        "name": "Latency",
+        "others": "Varies by setup",
+        "cta": "< 600ms (Guaranteed)"
+      },
+      "pricing": {
+        "name": "Pricing",
+        "others": "Usage-based (Complex)",
+        "cta": "Flat-fee (Predictable)"
+      },
+      "compliance": {
+        "name": "Compliance",
+        "others": "Custom setup",
+        "cta": "HIPAA & GDPR Ready"
+      },
+      "results": {
+        "name": "Proven ROI",
+        "others": "Technical-only tool",
+        "cta": "Up to 40% no-show reduction"
+      }
     }
   }
 }
