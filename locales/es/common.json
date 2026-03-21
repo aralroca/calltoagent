@@ -6,6 +6,7 @@
     "pricing": "Precios",
     "comparison": "Comparativa",
     "faq": "Preguntas frecuentes",
+    "blog": "Blog",
     "requestDemo": "Solicitar Demo",
     "language": "Idioma"
   },
@@ -348,5 +349,12 @@
         "cta": "40% menos de inasistencias"
       }
     }
+  },
+  "blog": {
+    "title": "Blog de CallToAgent",
+    "subtitle": "Ideas, guías e impresiones sobre el futuro de la infraestructura de voz con IA.",
+    "readMore": "Leer más",
+    "backToBlog": "Volver al Blog",
+    "noPosts": "No se encontraron artículos."
   }
 }

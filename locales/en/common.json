@@ -6,6 +6,7 @@
     "pricing": "Pricing",
     "comparison": "Comparison",
     "faq": "FAQ",
+    "blog": "Blog",
     "requestDemo": "Request Demo",
     "language": "Language"
   },
@@ -348,5 +349,12 @@
         "cta": "Up to 40% no-show reduction"
       }
     }
+  },
+  "blog": {
+    "title": "CallToAgent Blog",
+    "subtitle": "Insights, guides, and thoughts on the future of AI voice infrastructure.",
+    "readMore": "Read more",
+    "backToBlog": "Back to Blog",
+    "noPosts": "No posts found."
   }
 }

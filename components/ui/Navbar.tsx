@@ -26,6 +26,7 @@ const Navbar = () => {
     { name: t("navbar.comparison"), href: "#comparison" },
     { name: t("navbar.pricing"), href: "#pricing" },
     { name: t("navbar.faq"), href: "#faq" },
+    { name: t("navbar.blog"), href: `/${lang}/blog` },
   ];
 
   return (
