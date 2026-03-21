@@ -1,8 +1,14 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkGfm from "remark-gfm";
+import remarkRehype from "remark-rehype";
+import rehypeStringify from "rehype-stringify";
+import rehypeHighlight from "rehype-highlight";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 const blogDirectory = path.join(process.cwd(), "content/blog");
 
@@ -16,11 +22,24 @@ export interface PostData {
   language: "en" | "es";
   category?: string;
   contentHtml?: string;
+  readingTime?: number;
+  wordCount?: number;
 }
 
-export async function getSortedPostsData(lang: "en" | "es") {
+import { translationMap } from "./blog-translations";
+
+export function getTranslatedSlug(lang: "en" | "es", slug: string): string | null {
+  return translationMap[lang]?.[slug] ?? null;
+}
+
+function computeReadingTime(content: string): { readingTime: number; wordCount: number } {
+  const words = content.trim().split(/\s+/).length;
+  return { readingTime: Math.max(1, Math.ceil(words / 200)), wordCount: words };
+}
+
+export async function getSortedPostsData(lang: "en" | "es"): Promise<PostData[]> {
   const langDir = path.join(blogDirectory, lang);
-  
+
   if (!fs.existsSync(langDir)) {
     return [];
   }
@@ -33,10 +52,13 @@ export async function getSortedPostsData(lang: "en" | "es") {
       const fullPath = path.join(langDir, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
       const matterResult = matter(fileContents);
+      const { readingTime, wordCount } = computeReadingTime(matterResult.content);
 
       return {
         slug,
         language: lang,
+        readingTime,
+        wordCount,
         ...(matterResult.data as { title: string; date: string; excerpt: string; author: string; image?: string; category?: string }),
       };
     });
@@ -46,16 +68,23 @@ export async function getSortedPostsData(lang: "en" | "es") {
 
 export async function getPostData(lang: "en" | "es", slug: string): Promise<PostData | null> {
   const fullPath = path.join(blogDirectory, lang, `${slug}.md`);
-  
+
   if (!fs.existsSync(fullPath)) {
     return null;
   }
 
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);
+  const { readingTime, wordCount } = computeReadingTime(matterResult.content);
 
-  const processedContent = await remark()
-    .use(html)
+  const processedContent = await unified()
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype)
+    .use(rehypeSlug)
+    .use(rehypeAutolinkHeadings, { behavior: "wrap" })
+    .use(rehypeHighlight)
+    .use(rehypeStringify)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
@@ -63,6 +92,8 @@ export async function getPostData(lang: "en" | "es", slug: string): Promise<Post
     slug,
     contentHtml,
     language: lang,
+    readingTime,
+    wordCount,
     ...(matterResult.data as { title: string; date: string; excerpt: string; author: string; image?: string; category?: string }),
   };
 }

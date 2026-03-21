@@ -1,13 +1,11 @@
 ---
 title: "AI Voice Agent for Healthcare: Complete Setup Guide"
-date: "2024-03-20"
+date: "2026-03-20"
 excerpt: "Connect Google Calendar and EHR systems to reduce no-shows by 40% with AI-driven appointment management."
 author: "CallToAgent Team"
-category: "Healthcare"
+category: "healthcare"
 image: "/blog/healthcare-agent.jpg"
 ---
-
-# AI Voice Agent for Healthcare: Complete Setup Guide
 
 In the healthcare industry, missed appointments are a major logistical and financial burden. **CallToAgent's MCP integrations** (Google Calendar, EHR) make it easy to write concrete, tool-specific guides that rank well.
 

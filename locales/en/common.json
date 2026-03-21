@@ -355,6 +355,13 @@
     "subtitle": "Insights, guides, and thoughts on the future of AI voice infrastructure.",
     "readMore": "Read more",
     "backToBlog": "Back to Blog",
-    "noPosts": "No posts found."
+    "noPosts": "No posts found.",
+    "categories": {
+      "technology": "Technology",
+      "startup": "Startup",
+      "healthcare": "Healthcare",
+      "business": "Business Strategy"
+    },
+    "minRead": "min read"
   }
 }

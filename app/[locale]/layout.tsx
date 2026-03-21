@@ -97,6 +97,8 @@ export default async function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="theme-color" content="#6366F1" />
+        <link rel="alternate" type="application/rss+xml" title="CallToAgent Blog" href="/feed.xml" />
+        <link rel="alternate" type="application/rss+xml" title="Blog de CallToAgent" href="/feed-es.xml" />
         <GoogleAnalytics />
         <JsonLd locale={locale} />
       </head>

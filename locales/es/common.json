@@ -355,6 +355,13 @@
     "subtitle": "Ideas, guías e impresiones sobre el futuro de la infraestructura de voz con IA.",
     "readMore": "Leer más",
     "backToBlog": "Volver al Blog",
-    "noPosts": "No se encontraron artículos."
+    "noPosts": "No se encontraron artículos.",
+    "categories": {
+      "technology": "Tecnología",
+      "startup": "Startup",
+      "healthcare": "Salud",
+      "business": "Estrategia de Negocio"
+    },
+    "minRead": "min de lectura"
   }
 }

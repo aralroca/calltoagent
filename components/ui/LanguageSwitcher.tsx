@@ -4,14 +4,27 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import useAppTranslation from "@/hooks/useAppTranslation";
 import { trackEvent } from "@/lib/analytics";
+import { translationMap } from "@/lib/blog-translations";
 
 const LanguageSwitcher = () => {
   const pathname = usePathname();
   const { lang } = useAppTranslation();
 
-  const getPathForLocale = (locale: string) => {
+  const getPathForLocale = (targetLocale: string) => {
     const segments = pathname.split("/");
-    segments[1] = locale;
+    const currentLocale = segments[1];
+
+    // Check if this is a blog post page: /[locale]/blog/[slug]
+    if (segments[2] === "blog" && segments[3] && targetLocale !== currentLocale) {
+      const currentSlug = segments[3];
+      const translatedSlug = translationMap[currentLocale]?.[currentSlug];
+      if (translatedSlug) {
+        return `/${targetLocale}/blog/${translatedSlug}`;
+      }
+    }
+
+    // Default: just swap the locale segment
+    segments[1] = targetLocale;
     return segments.join("/");
   };
 
