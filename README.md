@@ -1,51 +1,33 @@
-# CallToAgent Landing Page
+# calltoagent.com
 
-Official marketing site for **calltoagent.com**, built with Next.js App Router and next-translate.
+Minimal domain-sale landing page for **calltoagent.com**, built with Next.js App Router, TypeScript and Tailwind CSS.
 
-## Stack
-
-- Next.js (App Router)
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Lucide React
-- next-translate (EN + ES)
-
-## Getting Started
+## Local development
 
 ```bash
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
-Open `http://localhost:3000`.
+## Configuration
 
-## Scripts
+Sale details live in `lib/sale-config.ts`. The current asking price is €15,000.
+
+Set these environment variables locally and in Vercel:
 
 ```bash
-npm run dev
-npm run build
-npm run start
-npm run lint
+RESEND_API_KEY=
+ESCROW_PURCHASE_URL=
+NEXT_PUBLIC_GA_ID=
 ```
 
-## i18n
+- `RESEND_API_KEY` delivers offer notifications to `support@calltoagent.com`. The address must be permitted by the configured Resend account.
+- `ESCROW_PURCHASE_URL` is optional. With no URL, **Buy securely** scrolls to the offer form.
+- `NEXT_PUBLIC_GA_ID` is optional and enables the existing Google Analytics integration.
 
-- Default locale: `en`
-- Locales: `en`, `es`
-- Translation files:
-  - `locales/en/common.json`
-  - `locales/es/common.json`
+## Checks
 
-## SEO
-
-- Metadata configured in `app/[locale]/layout.tsx`
-- JSON-LD (`SoftwareApplication`) added in Hero section
-
-## CTA behavior
-
-All demo CTA buttons are centralized in `components/ui/DemoButton.tsx` and trigger:
-
-```ts
-onClick={() => alert('AVAILABLE SOON')}
+```bash
+bun run typecheck
+bun run build
 ```
